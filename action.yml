@@ -1,0 +1,8 @@
+name: "fly-pr-review-action"
+description: "Deploy a PR to Fly.io"
+
+runs:
+  using: composite
+  steps:
+    - run: go run main.go
+      shell: bash
